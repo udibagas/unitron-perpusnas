@@ -1,0 +1,97 @@
+.alarm img{
+  opacity:0.5;
+  background-color:red;
+}
+
+.gambar a:hover img{
+opacity:0.5;
+  background-color:red;
+}
+
+img{
+opacity:1.0;	
+}
+
+.anim-blink {
+  color: red;
+  margin:0 auto;
+  font-size: 55px;
+  position: relative;}
+
+@keyframes noise-anim {
+  0% {clip: rect(3px, 9999px, 77px, 0);}
+
+  100% {clip: rect(15px, 9999px, 17px, 0);}}
+
+.anim-blink:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -3px 5px red;
+  top: 0;
+  color: white;
+  background: transparent;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;}
+
+@keyframes noise-anim-2 {
+  0% {clip: rect(99px, 9999px, 75px, 0);}
+ 
+ 
+  100% {clip: rect(78px, 9999px, 67px, 0);}}
+
+.anim-blink:before {
+
+ 
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 3px 5px #39f;
+  top: 0;
+  color: white;
+  background: transparent;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;}
+
+.blink_me {
+ background-color:red;
+-webkit-animation-name: blinker;
+-webkit-animation-duration: 1s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+
+-moz-animation-name: blinker;
+-moz-animation-duration: 1s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+
+animation-name: blinker;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+
+}
+@-moz-keyframes blinker { 
+0% { opacity: 1.0; }
+50% { opacity: 0.2; }
+100% { opacity: 1.0; }
+}
+@-webkit-keyframes blinker { 
+0% { opacity: 1.0; }
+50% { opacity: 0.2; }
+100% { opacity: 1.0; }
+}
+@keyframes blinker { 
+0% { opacity: 1.0; }
+50% { opacity: 0.2; }
+100% { opacity: 1.0; }
+}
+
+.warna{
+	opacity:0.5;
+	background-color:red;
+	border:1px solid;
+	border-color:#F00;	
+}

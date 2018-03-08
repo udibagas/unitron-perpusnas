@@ -1,0 +1,63 @@
+@CHARSET "UTF-8";
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	outline: none;
+}
+body {
+	background: url(../images/login.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.login-form {
+	margin: 30px auto;
+	max-width: 500px;
+	font: 15px/1.6em Lato, serif;
+}
+
+.login-form .panel {
+	border: none;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.63);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.63);
+	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.63);
+}
+	.login-form .panel .panel-heading {
+		color: #fff; 
+		background: #6e91af;
+		line-height: 2.4em;
+		font-weight: bold;
+		padding-left: 26px;
+	}
+	.login-form .panel .panel-body {
+		background: #f2f2f2;
+		padding: 20px 26px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		-webkit-border-bottom-left-radius: 5px;
+        -moz-border-radius-bottomleft: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+        -moz-border-radius-bottomright: 5px;
+	}
+
+form[role=login] {
+	color: #a5a5a5;
+}
+	form[role=login] label {
+		font-weight: normal;
+	}
+	form[role=login] input,
+	form[role=login] button {
+		font-size: 14px;
+	}
+	form[role=login] input {
+		margin: .5em 0;
+	}
+	form[role=login] button {
+		margin-top: 2em;
+		font-weight: bold;
+	}
