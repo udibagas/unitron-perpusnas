@@ -6,7 +6,7 @@ $sql=$konek->query("SELECT (SELECT COUNT(sensor.ID_SENSOR) FROM trans5 INNER JOI
 (SELECT COUNT(sensor.ID_SENSOR) FROM trans5 INNER JOIN sensor ON trans5.ID_SENSOR = sensor.ID_SENSOR WHERE sensor.PARAMETER='suhu' AND pesan<>'' AND trans5.id IN (SELECT MAX(id)AS id FROM trans5  GROUP BY ID_SENSOR ) ) as k_suhu,
 (SELECT COUNT(sensor.ID_SENSOR) FROM trans5 INNER JOIN sensor ON trans5.ID_SENSOR = sensor.ID_SENSOR WHERE sensor.PARAMETER='air' AND pesan<>'' AND trans5.id IN (SELECT MAX(id)AS id FROM trans5  GROUP BY ID_SENSOR ) ) as k_air,
 (SELECT COUNT(sensor.ID_SENSOR) FROM trans5 INNER JOIN sensor ON trans5.ID_SENSOR = sensor.ID_SENSOR WHERE sensor.PARAMETER='lembab' AND pesan<>'' AND trans5.id IN (SELECT MAX(id)AS id FROM trans5  GROUP BY ID_SENSOR )) as k_lembab,
-(SELECT SUM(trans5.nilai) as jumlah FROM trans5 INNER JOIN sensor ON trans5.ID_SENSOR = sensor.ID_SENSOR WHERE LEFT(sensor.PARAMETER,6)='active' AND LEFT(sensor.POSISIDETAIL,9)='panel MSB'  AND trans5.id IN (SELECT MAX(id)AS id FROM trans5  GROUP BY ID_SENSOR )) as k_daya
+(SELECT SUM(trans5.nilai) as jumlah FROM trans5 INNER JOIN sensor ON trans5.ID_SENSOR = sensor.ID_SENSOR WHERE LEFT(sensor.PARAMETER,6)='Active' AND sensor.POSISIDETAIL like '%MSB%'  AND trans5.id IN (SELECT MAX(id)AS id FROM trans5  GROUP BY ID_SENSOR )) as k_daya
 ,(((SELECT AVG((trans5.nilai)) as nilai FROM
 trans5 INNER JOIN sensor ON sensor.ID_SENSOR = trans5.ID_SENSOR WHERE sensor.ID_SENSOR='34'  AND trans5.id IN (SELECT MAX(id)AS id FROM trans5  GROUP BY ID_SENSOR )  group by sensor.ID_SENSOR)
 +
