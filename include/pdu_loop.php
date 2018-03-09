@@ -21,7 +21,7 @@
                                     <div class="ui-progress" id='bar_pdu<?php echo $data1['POSISIDETAIL']; ?>' style="width: 100%;color:white;text-align: center;height: 30px;font-size: 20px;">
 
                                        <p align="center">
-                                        <b class="value">0 KW</b>
+                                        <b class="value">0 W</b>
                                         </p>
 
                                     </div>
