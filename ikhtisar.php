@@ -97,13 +97,6 @@ if ($tipe == "tab")
         <?php include "include/daya_loop.php"; ?>
     </div>
     <div class="row">
-        <?php include "include/ups_loop.php"; ?>
-    </div>
-    <div class="row">
-        <?php include "include/suhu_PAC_loop.php"; ?>
-        <?php include "include/lembab_PAC_loop.php"; ?>
-    </div>
-    <div class="row">
         <?php include "include/pdu_loop.php"; ?>
     </div>
 <?php endif ?>
@@ -181,9 +174,9 @@ elseif ($tipe == "semua")
     // include "include/tangki_js.php";
     include "include/daya_js.php";
     include "include/pdu_js.php";
-    include "include/ups_js.php";
-    include "include/suhu_PAC_js.php";
-    include "include/lembab_PAC_js.php";
+    // include "include/ups_js.php";
+    // include "include/suhu_PAC_js.php";
+    // include "include/lembab_PAC_js.php";
 }
 
 ?>

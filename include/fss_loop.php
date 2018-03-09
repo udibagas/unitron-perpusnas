@@ -76,12 +76,21 @@
         var nilai_daya = json['k_daya'];
         var PUE = json['PUE'];
 
-        nilai_daya =nilai_daya.substr(0,5);
-        PUE =PUE.substr(0,4);
+        if (nilai_daya > 0) {
+            nilai_daya =nilai_daya.substr(0,5);
+        }
+
+        else {
+            nilai_daya = 0;
+        }
+
+        if (PUE > 0) {
+            PUE =PUE.substr(0,4);
+        } else {
+            PUE = 0;
+        }
 
         document.getElementById("kondisi_alert").style.display = 'block';
-
-
 
         if(nilai>0){
             document.getElementById("k_gas").style.color = 'red';
