@@ -94,7 +94,7 @@ if ($tipe == "tab")
         <?php include "include/lembab_rak_loop.php"; ?>
     </div>
     <div class="row">
-        <?php include "include/daya_loop.php"; ?>
+        <?php /*include "include/daya_loop.php";*/ ?>
     </div>
     <div class="row">
         <?php include "include/pdu_loop.php"; ?>
@@ -172,7 +172,7 @@ elseif ($tipe == "semua")
     include "include/suhu_rak_js.php";
     include "include/lembab_rak_js.php";
     // include "include/tangki_js.php";
-    include "include/daya_js.php";
+    // include "include/daya_js.php";
     include "include/pdu_js.php";
     // include "include/ups_js.php";
     // include "include/suhu_PAC_js.php";
