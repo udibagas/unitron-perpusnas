@@ -99,10 +99,10 @@
              document.getElementById("t_gas").style.color = 'red';
             document.getElementById("t_gas").innerHTML = 'Gas Tidak Normal';
         }else{
-            document.getElementById("k_gas").style.color = 'grey';
-            document.getElementById("gb_gas").style.color = 'grey';
+            document.getElementById("k_gas").style.color = 'green';
+            document.getElementById("gb_gas").style.color = 'green';
             document.getElementById("gb_gas").className = 'fa fa-check';
-            document.getElementById("t_gas").style.color = 'grey';
+            document.getElementById("t_gas").style.color = 'green';
             document.getElementById("t_gas").innerHTML = 'Gas Normal';
         }
          if(nilai_air>0){
@@ -112,10 +112,10 @@
             document.getElementById("t_air").style.color = 'red';
             document.getElementById("t_air").innerHTML = 'Air Tidak Normal';
         }else{
-            document.getElementById("k_air").style.color = 'grey';
-            document.getElementById("gb_air").style.color = 'grey';
+            document.getElementById("k_air").style.color = 'green';
+            document.getElementById("gb_air").style.color = 'green';
             document.getElementById("gb_air").className = 'fa fa-check';
-            document.getElementById("t_air").style.color = 'grey';
+            document.getElementById("t_air").style.color = 'green';
             document.getElementById("t_air").innerHTML = 'Air Normal';
         }
          if(nilai_suhu>0){
@@ -125,10 +125,10 @@
             document.getElementById("t_suhu").style.color = 'red';
             document.getElementById("t_suhu").innerHTML = 'Suhu Tidak Normal';
         }else{
-            document.getElementById("k_suhu").style.color = 'grey';
-            document.getElementById("gb_suhu").style.color = 'grey';
+            document.getElementById("k_suhu").style.color = 'green';
+            document.getElementById("gb_suhu").style.color = 'green';
             document.getElementById("gb_suhu").className = 'fa fa-check';
-            document.getElementById("t_suhu").style.color = 'grey';
+            document.getElementById("t_suhu").style.color = 'green';
             document.getElementById("t_suhu").innerHTML = 'Suhu Normal';
         }
          if(nilai_lembab>0){
@@ -138,10 +138,10 @@
             document.getElementById("t_lembab").style.color = 'red';
             document.getElementById("t_lembab").innerHTML = 'Lembab Tidak Normal';
         }else{
-            document.getElementById("k_lembab").style.color = 'grey';
-            document.getElementById("gb_lembab").style.color = 'grey';
+            document.getElementById("k_lembab").style.color = 'green';
+            document.getElementById("gb_lembab").style.color = 'green';
             document.getElementById("gb_lembab").className = 'fa fa-check';
-            document.getElementById("t_lembab").style.color = 'grey';
+            document.getElementById("t_lembab").style.color = 'green';
             document.getElementById("t_lembab").innerHTML = 'Lembab Normal';
         }
 
